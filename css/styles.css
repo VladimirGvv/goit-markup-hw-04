@@ -7,6 +7,7 @@
     --primary-white-color:#FFFFFF;
     --primary-black-color: #000000;
     --footer-backgraund-color: #2F303A;
+    --icon-color: #AFB1B8;
 
 }
 /* *,
@@ -217,6 +218,31 @@ justify-content: space-between;}
 .team-list .team-box+.team-box{
     margin-left: 30px;
 }
+/* компании */
+
+.group {display: flex;
+}
+
+.company .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    fill: var(--icon-color);
+}
+
+.group .company +.company {
+    margin-left: 30px;
+}
+
+.company .link:hover {
+    border: 1px solid var(--accent-color);
+    fill: var(--accent-color);
+}
+
 /* Button */
 button {
     border-radius: 4px;
